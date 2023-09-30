@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Mock Data</title>
+</head>
+<body>
+    <h1>Mock Data</h1>
+    <ul>
+        {% for data in mock_data %}
+            <li>{{ data.name }} - {{ data.description }}</li>
+        {% empty %}
+            <li>No mock data available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
